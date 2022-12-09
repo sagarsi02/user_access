@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:user_access/SideBar.dart';
 
 class LocationPage extends StatefulWidget {
   const LocationPage({Key? key}) : super(key: key);
@@ -108,6 +109,7 @@ class _LocationPageState extends State<LocationPage> {
           ),
         ),
       ),
+       drawer: const SideBar(),
     );
   }
 }
