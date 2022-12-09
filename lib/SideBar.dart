@@ -7,6 +7,7 @@ import 'package:user_access/Screen/SimCard.dart';
 import 'package:user_access/Screen/Bluetooth.dart';
 import 'package:user_access/Screen/Storage.dart';
 import 'package:user_access/Screen/Home.dart';
+// import 'package:user_access/Screen/location_page.dart';
 
 class SideBar extends StatefulWidget {
   const SideBar({Key? key}) : super(key: key);
@@ -25,7 +26,7 @@ class _SideBarState extends State<SideBar> {
           const UserAccountsDrawerHeader(
             currentAccountPicture: CircleAvatar(
               backgroundImage: NetworkImage(
-                  'https://source.unsplash.com/random/200x200/?Users'
+                  'https://avatars.githubusercontent.com/u/69505695?v=4'
               ),
             ),
             accountName: Text('Sagar Singh'),
@@ -55,7 +56,7 @@ class _SideBarState extends State<SideBar> {
             title: const Text('Camera'),
             onTap: (){
               Navigator.push(
-                context,MaterialPageRoute(builder: (context) => const camera()),
+                context,MaterialPageRoute(builder: (context) => camera()),
               );
             },
           ),
@@ -74,7 +75,7 @@ class _SideBarState extends State<SideBar> {
             title: const Text('Location'),
             onTap: (){
               Navigator.push(
-                context,MaterialPageRoute(builder: (context) => const location()),
+                context,MaterialPageRoute(builder: (context) => const LocationPage()),
               );
             },
           ),

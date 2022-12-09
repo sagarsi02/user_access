@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:user_access/Screen/Home.dart';
+import 'package:user_access/Screen/Splash.dart';
 
 void main(){
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const home(),
+      home: const Splash(),
     );
   }
 }
